@@ -1,0 +1,30 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.pokeman {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.species {
+  text-align: left;
+  list-style: none;
+  font-size: 18px;
+  padding: 1rem;
+}
+.species a {
+  color: black;
+  outline: none;
+  font-style: none;
+  text-decoration: none;
+}
+.species__item {
+  margin: 8px 0;
+  padding: 6px;
+  /* background: hsl(0, 0%, 95%); */
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
