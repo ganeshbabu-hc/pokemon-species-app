@@ -38,7 +38,7 @@ const PokemonDetails = () => {
             className="pokeman__img"
             alt={`image_${pokemon.species.name}`}
             src={pokemon.sprites.front_default}
-            style={{ height: `${pokemon.height}` }}
+            style={{ height: `${pokemon.height * 10}px` }}
           />
           <Link className="pokeman__nav" to="/">
             Back

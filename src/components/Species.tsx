@@ -41,10 +41,11 @@ const SpeciesList = () => {
         <ul className="species">
           {pokemonList.map((species: Species, index: number) => {
             return (
-              <Link to={`/species/${getPokemonIdFromUrl(species.url)}`}>
-                <li className="species__item" key={`species-${index}`}>
-                  {species.name}
-                </li>
+              <Link
+                key={`species-${index}`}
+                to={`/species/${getPokemonIdFromUrl(species.url)}`}
+              >
+                <li className="species__item">{species.name}</li>
               </Link>
             );
           })}
